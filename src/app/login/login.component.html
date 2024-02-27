@@ -1,0 +1,18 @@
+<div class="w-50 container-fluid mt-5 p-5 text-center bg-info rounded">
+    
+    <div>
+        <h2>Admin Login</h2>
+        <!-- Your registration form for admins -->
+        <form (ngSubmit)="onAdminLogin()">
+            <button class="btn btn-success" type="submit" routerLink="/admin-login"><a>Login</a></button>
+        </form>
+    </div>
+
+    <div>
+        <h2>User Login</h2>
+        <!-- Your registration form for users -->
+        <form (ngSubmit)="onUserLogin()">
+            <button class="btn btn-success" type="submit" routerLink="/user-login">Login</button>
+        </form>
+    </div>
+</div>

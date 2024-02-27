@@ -1,0 +1,16 @@
+@if(currentRole==="user"){
+    <button class="btn btn-success" (click)="onUserClick()" style="position: absolute;right: 20px; top: 60px;">View Properties</button>
+    <div class="text-center mt-5 p-4">
+        <p class="lead fs-2 text-primary">{{currentUser?.username}}</p>
+        <p class="lead fs-4 text-secondary">{{currentUser?.email}}</p>
+        <p class="lead fs-4 text-secondary">{{currentUser?.dob}}</p>
+    </div>
+}
+@else {
+    <button class="btn btn-success" (click)="onAdminClick()" style="position: absolute;right: 20px; top: 60px;">Properties</button>
+    <div class="text-center mt-5 p-4">
+        <p class="lead fs-2 text-primary">{{currentUser?.username}}</p>
+        <p class="lead fs-4 text-secondary">{{currentUser?.email}}</p>
+        <p class="lead fs-4 text-secondary">{{currentUser?.dob}}</p>
+    </div>    
+}
